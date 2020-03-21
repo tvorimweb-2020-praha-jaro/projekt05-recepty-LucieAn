@@ -37,3 +37,147 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+/* pismo */
+
+.nazev {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 28px;
+    padding: 10px;
+    margin: 0;
+}
+
+.recept-nazev {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+}
+
+.recept-meta {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+/* struktura a velikost bunek */
+
+.recepty {
+    display: flex;
+    flex-direction: column;
+}
+
+.recept {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hlavni-recept {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recept-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*obrazky*/
+
+.hlavni-recept {
+    background-image: url(images/salat.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    min-height: 200px;
+    background-size: cover;
+    width: auto;
+}
+
+.recept2 {
+    background-image: url(images/chlebicek.jpg);
+}
+
+.recept3 {
+    background-image: url(images/tacos.jpg);
+}
+
+.recept4 {
+    background-image: url(images/cizrna.jpg);
+}
+    
+.recept5 {
+    background-image: url(images/burger.jpg);
+}
+
+.recept2, .recept3, .recept4, .recept5 {
+    min-height: 90px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    background-size: cover;
+}
+
+/*----------------tablet------------------*/
+
+@media (min-width: 480px) {
+    .nazev {
+        font-size: 36px;
+        padding: 20px;
+        margin: 0;}
+
+    .recept-nazev {
+        font-size: 22px;
+        padding: 20px;
+        margin: 0;}
+ 
+    .hlavni-recept {
+        min-height: 250px;}
+
+    .recept {
+        min-height: 150px;
+        width: 50%;}
+       
+    .recepty {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+/* nevim, jak mezi recepty 2 - 3 a 4 -5 udelat bily prostor*/
+
+
+/*----------------PC------------------*/
+
+@media (min-width: 860px) {
+    .nazev {
+        font-size: 48px;
+        padding: 20px;
+        margin: 0;}
+
+    .recept-nazev {
+        font-size: 28px;
+        padding: 20px;
+        margin: 0;}
+ 
+    .hlavni-recept {
+        min-height: 400px;
+        border-right: 5px solid white;}
+
+    .recept {
+        min-height: 200px;}
+
+    .doporucujeme {
+        display: flex;
+    }    
+}       
